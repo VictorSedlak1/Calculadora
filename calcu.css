@@ -10,7 +10,8 @@
     line-height: 100px;
     font-size: 40px;
     font-family: 'Roboto Mono', monospace;
-    
+    grid-column: 1/span 3;
+    box-shadow: black 10px 10px 5px;
     
 }
 #resposta{
@@ -20,6 +21,7 @@
 .casa{
     border: solid 3px black ;
     
+    
 }
 body{
     height: 90vh;
@@ -27,9 +29,17 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb(164, 219, 255);
+    display: grid;
+    grid-template-columns: auto 400 auto;
+    grid-template-rows: 100px 500px auto;
 }
 .casa:hover{
     background-color: rgb(181, 255, 251);
     cursor: pointer;
     transition: 0.3s;
+}
+#titulo{
+    grid-column: 1/span 3;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
 }
