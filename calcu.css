@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
 #calcu{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 100px 100px 100px 100px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    border: solid 3px black;
+    line-height: 100px;
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+}
+#resposta{
+    grid-column: 1 /span 4;
+    border: solid 3px black ;
+}
+.casa{
+    border: solid 3px black ;
+    
+}
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(164, 219, 255);
+}
+.casa:hover{
+    background-color: rgb(181, 255, 251);
+    cursor: pointer;
+    transition: 0.3s;
 }
